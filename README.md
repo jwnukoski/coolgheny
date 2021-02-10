@@ -1,4 +1,7 @@
 # Coolgheny
+## Status:
+This project was created 2-10-21, and is still a work in progress!
+
 ## Purpose:
 This is a React and Express webpage template. You will be responsible for populating it with the data.  
 This project is intended for developers.
