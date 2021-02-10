@@ -1,0 +1,8 @@
+@import '../../../styles/global';
+
+header {
+    background-color: map-get($colors, bkgPrimary);
+    background-image: url('/public/img/banner.jpeg');
+    background-size: auto 100%;
+    min-height: 90vh;
+}

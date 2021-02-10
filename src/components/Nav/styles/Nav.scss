@@ -1,6 +1,90 @@
 @import '../../../styles/global';
 
+.desktopMenu {
+    display: none;
+}
+
 nav {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    min-height: 3.5em;
+    color: map-get($colors, txtPrimary);
     background-color: map-get($colors, bkgPrimary);
-    min-height: 1em;
+    box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.69);
+    
+    .brand {
+        float: left;
+
+        .block {
+            /* Delete this if you have your own logo */
+            background-color: map-get($colors, primary);
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            padding: 0.5em;
+            margin: 0 0.5em;
+            position: relative;
+            top: 2px;
+        }
+
+        span {
+            /* Your website's name/brand */
+            font-size: 1em;
+            font-weight: bold;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .mobileMenu {
+        float: right;
+    }
+
+    button {
+        background-color: map-get($colors, bkgPrimary);
+        border: none;
+    }
+
+}
+
+nav path {
+    fill: map-get($colors, txtPrimary);
+
+    &:hover {
+        fill: map-get($colors, secondary);
+    }
+}
+
+.mobileMenu svg {
+    font-size: 1.5em;
+}
+
+.mobileMenuDropDown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    height: 100vh;
+    background-color: map-get($colors, bkgPrimary);
+    box-shadow: -10px 0px 15px 5px rgba(0,0,0,0.69);
+    
+    button {
+        padding: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .mobileMenu, .mobileMenuDropDown {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: block;
+        float: right;
+    }
 }
