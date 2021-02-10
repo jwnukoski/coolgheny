@@ -1,3 +1,19 @@
+# Coolgheny
+## Purpose:
+This is a React and Express webpage template. You will be responsible for populating it with the data.  
+This project is intended for developers.
+
+## Technologies
+- React
+    - For the client
+- TypeScript
+- Eslint
+    - Standard style guide
+- Express
+    - Server
+- FontAwesome
+    - Icons
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
