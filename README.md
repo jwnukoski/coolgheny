@@ -3,6 +3,9 @@
 This is a React and Express webpage template. You will be responsible for populating it with the data.  
 This project is intended for developers.
 
+## Design Mockup
+![Mockup for coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/mockup.png?raw=true "coolgheny mockup")
+
 ## Technologies
 - React
     - For the client
