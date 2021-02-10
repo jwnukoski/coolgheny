@@ -2,13 +2,8 @@ $colors: (
     txtPrimary: white,
     txtSecondary: black,
     primary: #171F34,
-    secondary: #3f5791
+    secondary: #3f5791,
     bkgPrimary:  #343635,
     bkgSecondary: #4D504E
 );
 // map-get($colors, primaryText)
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}

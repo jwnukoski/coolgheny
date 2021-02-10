@@ -1,2 +1,6 @@
-@import '../../styles/Globals';
+@import '../../../styles/global';
 
+nav {
+    background-color: map-get($colors, bkgPrimary);
+    min-height: 1em;
+}
