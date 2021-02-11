@@ -1,16 +1,82 @@
 @import '../../../styles/global';
 
 header {
+    padding-top: 3em;
     background-color: map-get($colors, bkgPrimary);
     background-image: url('./banner.jpeg');
     background-size: 100% 100%;
     object-fit: cover;
     background-repeat: no-repeat;
     min-height: 90vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .verticalPadTop {
+        align-self: flex-start;
+    }
+
+    .verticalPadBottom {
+        align-self: flex-end;
+    }
+
+    .midContentWrapper {
+        h1, h2 {
+            text-align: center;
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5em;
+        }
+    
+        h1 {
+            font-weight: 2em;
+            font-size: 3em;
+        }
+    
+        h2 {
+            max-width: 50%;
+            margin: auto;
+            font-weight: normal;
+        }
+
+        a {
+            font-weight: bold;
+            display: block;
+            padding: 1em;
+            margin: 1em auto;
+            text-decoration: none;
+            text-align: center;
+            max-width: 50%;
+            font-size: 1em;
+        }
+
+        .learnBtn {
+            color: map-get($colors, txtSecondary);
+            background-color: map-get($colors, primary);
+            &:hover {
+                background-color: map-get($colors, secondary);
+            }
+        }
+
+        .hireBtn {
+            background-color: map-get($colors, bkgPrimary);
+            color: map-get($colors, txtPrimary);
+            &:hover {
+                background-color: map-get($colors, bkgSecondary);
+            }
+        }
+    }  
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     header {
         background-size: auto 100%;
+        background-position: center;
+        
+        .learnBtn, .hireBtn {
+            display: inline;
+            width: 25%;
+        }
     }
 }

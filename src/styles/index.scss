@@ -13,3 +13,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: map-get($colors, bkgPrimary);
 }
+
+html {
+  max-width: 1080px;
+  margin: auto;
+}

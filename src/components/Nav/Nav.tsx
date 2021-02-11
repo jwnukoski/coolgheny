@@ -1,10 +1,28 @@
 import React, { useState } from 'react'
 import './styles/Nav.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faHome, faQuestion, faBriefcase, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
-function Nav () {
+type NavProps = {
+  siteName: string;
+}
+
+type Link = {
+  name: string;
+  link: string;
+  fontAwesomeIcon: IconProp;
+  alt: string;
+}
+
+function Nav (props: NavProps) {
   const [displayMobileMenu, setDisplayMobileMenu] = useState(false)
+  const links: Link[] = [
+    { name: 'Home', link: '/#home', fontAwesomeIcon: faHome, alt: '' },
+    { name: 'About Us', link: '/#about-us', fontAwesomeIcon: faQuestion, alt: 'Learn More' },
+    { name: 'Our Work', link: '/#our-work', fontAwesomeIcon: faBriefcase, alt: '' },
+    { name: 'Contact Us', link: '/#contact-us', fontAwesomeIcon: faPencilAlt, alt: 'Hire Us' }
+  ]
 
   function toggleDisplayMenu () {
     setDisplayMobileMenu(!displayMobileMenu)
@@ -17,6 +35,13 @@ function Nav () {
           <button onClick={toggleDisplayMenu}>
             <FontAwesomeIcon icon={faTimes}/>
           </button>
+          {
+            links.map((item, index) => {
+              return <a href={item.link} key={index} title={item.name}>
+                <FontAwesomeIcon icon={item.fontAwesomeIcon}/>
+              </a>
+            })
+          }
         </div>
       )
     }
@@ -25,7 +50,7 @@ function Nav () {
   return (
     <nav>
       <div className="brand">
-        <span><div className="block"></div>Your Website Name</span>
+        <span><div className="block"></div>{props.siteName}</span>
       </div>
       <div className="mobileMenu">
         <button onClick={toggleDisplayMenu}>
@@ -34,7 +59,14 @@ function Nav () {
         { getDisplayMenu(displayMobileMenu) }
       </div>
       <div className="desktopMenu">
-
+        {
+          links.map((item, index) => {
+            return <a href={item.link} key={index}>
+              <FontAwesomeIcon icon={item.fontAwesomeIcon}/>
+              {item.name}
+              </a>
+          })
+        }
       </div>
     </nav>
   )

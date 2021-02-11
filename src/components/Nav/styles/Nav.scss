@@ -74,6 +74,31 @@ nav path {
     
     button {
         padding: 1em;
+        position: relative;
+        left: 4px;
+    }
+}
+
+.mobileMenuDropDown a {
+    display: block;
+    padding: 1em;
+    &:hover {
+        color: map-get($colors, secondary);
+    }
+}
+
+.desktopMenu a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 2em;
+    color: map-get($colors, txtPrimary);
+
+    &:hover {
+        border-bottom: 4px solid map-get($colors, secondary);
+    }
+
+    svg {
+        margin-right: 1em;
     }
 }
 
