@@ -1,11 +1,16 @@
 import React from 'react'
 import './styles/NavItem'
 
-function NavItem () {
-  return (
-    <nav>
+type NavItemProps = {
+  link: string,
+  name: string
+}
 
-    </nav>
+function NavItem (props: NavItemProps) {
+  return (
+    <li>
+      <a href={props.link}>{props.name}</a>
+    </li>
   )
 }
 
