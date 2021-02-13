@@ -1,6 +1,6 @@
 # Coolgheny
 ## Purpose:
-This is a React webpage template, with responsive design. 
+This is a React single-page template, with responsive design. 
 It includes an Express server for serving up the files. 
 
 ## Mobile Preview
