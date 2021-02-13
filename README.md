@@ -1,12 +1,10 @@
 # Coolgheny
-## Status:
-This project was created 2-10-21, and is still a work in progress!
-
 ## Purpose:
-This is a React and Express webpage template. You will be responsible for populating it with the data.  
-This project is intended for developers.
+This is a React and Express webpage template. 
+It includes an Express server for serving up the files. 
 
 ## Design Mockup
+This design was inspired by the popular Neve WordPress Theme. 
 ![Mockup for coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/mockup.png?raw=true "coolgheny mockup")
 
 ## Technologies
@@ -19,6 +17,8 @@ This project is intended for developers.
     - Server
 - FontAwesome
     - Icons
+- Bootstrap
+    - Grid system
 
 # Getting Started with Create React App
 
