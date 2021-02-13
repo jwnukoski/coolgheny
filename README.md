@@ -3,9 +3,14 @@
 This is a React and Express webpage template. 
 It includes an Express server for serving up the files. 
 
+## Preview
+![Desktop preview of coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/desktop_preview.png?raw=true "coolgheny desktop preview")  
+![Mobile preview of coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/mobile_preview.png?raw=true "coolgheny mobile preview")  
+
 ## Design Mockup
 This design was inspired by the popular Neve WordPress Theme. 
-![Mockup for coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/mockup.png?raw=true "coolgheny mockup")
+![Mockup for coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/mockup.png?raw=true "coolgheny mockup")
+
 
 ## Technologies
 - React
