@@ -4,8 +4,8 @@ header {
     padding-top: 3em;
     background-color: map-get($colors, bkgPrimary);
     background-image: url('./banner.jpeg');
-    background-size: 100% 100%;
-    object-fit: cover;
+    background-size: auto 100%;
+        background-position: center;
     background-repeat: no-repeat;
     min-height: 90vh;
     
@@ -13,15 +13,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    .verticalPadTop {
-        align-self: flex-start;
-    }
-
-    .verticalPadBottom {
-        align-self: flex-end;
-    }
-
-    .midContentWrapper {
+    .vMidWrapper {
         h1, h2 {
             text-align: center;
             display: block;
@@ -31,13 +23,14 @@ header {
     
         h1 {
             font-weight: 2em;
-            font-size: 3em;
+            font-size: 4em;
         }
     
         h2 {
             max-width: 50%;
             margin: auto;
             font-weight: normal;
+            font-size: 1.25em;
         }
 
         a {
@@ -51,32 +44,45 @@ header {
             font-size: 1em;
         }
 
-        .learnBtn {
-            color: map-get($colors, txtSecondary);
-            background-color: map-get($colors, primary);
-            &:hover {
-                background-color: map-get($colors, secondary);
-            }
-        }
+        .btnWrapper {
+            margin: auto;
+            padding: 2em;
+            text-align: center;
 
-        .hireBtn {
-            background-color: map-get($colors, bkgPrimary);
-            color: map-get($colors, txtPrimary);
-            &:hover {
-                background-color: map-get($colors, bkgSecondary);
+            .learnBtn, .hireBtn {
+                display: inline-block;
+            }
+            
+            .learnBtn {
+                color: map-get($colors, txtSecondary);
+                background-color: map-get($colors, primary);
+                &:hover {
+                    background-color: map-get($colors, secondary);
+                }
+                margin-right: 2em;
+            }
+    
+            .hireBtn {
+                background-color: map-get($colors, bkgPrimary);
+                color: map-get($colors, txtPrimary);
+                &:hover {
+                    background-color: map-get($colors, bkgSecondary);
+                }
             }
         }
     }  
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     header {
-        background-size: auto 100%;
-        background-position: center;
         
-        .learnBtn, .hireBtn {
-            display: inline;
-            width: 25%;
+        .vMidWrapper {
+            .btnWrapper {
+                .learnBtn, .hireBtn {
+                    display: block !important;
+                    margin: 0 auto 2em auto;
+                }
+            }
         }
     }
 }

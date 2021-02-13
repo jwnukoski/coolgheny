@@ -1,0 +1,1 @@
+web: npm run server -p 3000

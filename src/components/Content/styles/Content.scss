@@ -1,0 +1,33 @@
+@import '../../../styles/global';
+
+.content {
+    color: map-get($colors, txtPrimary);
+    padding: 4em 1em;
+
+    &:nth-child(odd) {
+        background-color: map-get($colors, bkgPrimary);
+    }
+    &:nth-child(even) {
+        background-color: map-get($colors, bkgSecondary);
+    }
+
+    div div {
+        text-align: left;
+        display: flex;
+        
+        .midContentWrapper {
+            h2 {
+                text-decoration: underline;
+                text-decoration-color: map-get($colors, primary);
+            }
+
+            h2, p {
+                margin-bottom: 0.5em;
+            }
+        }
+
+        img {
+            width: 100%;
+        }   
+    }
+}

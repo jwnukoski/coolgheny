@@ -1,0 +1,17 @@
+@import '../../../styles/global';
+
+footer {
+    color: map-get($colors, txtPrimary);
+    text-align: center;
+    padding: 4em 1em;
+    background-color: map-get($colors, bkgPrimary);
+
+    h2 {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

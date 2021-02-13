@@ -1,0 +1,17 @@
+.vAlignWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .vPadTop {
+        align-self: flex-start;
+    }
+    
+    .vPadBottom {
+        align-self: flex-end;
+    }
+    
+    .vMidWrapper {
+        display: block;
+    }
+}

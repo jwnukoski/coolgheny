@@ -1,0 +1,36 @@
+@import '../../../styles/global';
+
+.badges {
+    background-color: map-get($colors, bkgPrimary);
+    padding: 4em 2em;
+}
+
+.badges div article {
+    color: white;
+    text-align: center;
+    padding: 4em 2em;
+
+    div {
+        font-size: 4em;
+        path {
+            fill: map-get($colors, primary)
+        }
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .badges div article {
+        div {
+            float: left;
+            margin-right: 0.5em;
+        }
+
+        h2, p {
+            text-align: left;
+        }
+    }
+}
