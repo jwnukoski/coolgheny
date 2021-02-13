@@ -4,10 +4,10 @@ This is a React single-page template, with responsive design.
 It includes an Express server for serving up the files. 
 
 ## Mobile Preview
-![Desktop preview of coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/desktop_preview.png?raw=true "coolgheny desktop preview")  
+![Mobile preview of coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/mobile_preview.png?raw=true "coolgheny mobile preview")  
 
 ## Desktop Preview
-![Mobile preview of coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/mobile_preview.png?raw=true "coolgheny mobile preview")  
+![Desktop preview of coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/desktop_preview.png?raw=true "coolgheny desktop preview")  
 
 ## Design Mockup
 ![Mockup for coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/mockup.png?raw=true "coolgheny mockup")
