@@ -26,6 +26,9 @@ This design was inspired by the popular Neve WordPress Theme.
     - Icons
 - Bootstrap
     - Grid system
+- SCSS
+    - Stylesheets
+    - Easily change the theme colors in /styles/_global.scss
 
 # Getting Started with Create React App
 
