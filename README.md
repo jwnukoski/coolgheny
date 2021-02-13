@@ -10,8 +10,8 @@ It includes an Express server for serving up the files.
 ![Mobile preview of coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/mobile_preview.png?raw=true "coolgheny mobile preview")  
 
 ## Design Mockup
-This design was inspired by the popular Neve WordPress Theme. 
 ![Mockup for coolgheny](https://github.com/jwnukoski/coolgheny/blob/main/images/mockup.png?raw=true "coolgheny mockup")
+This design was inspired by the popular Neve WordPress Theme, and drafted in Figma.
 
 
 ## Technologies
