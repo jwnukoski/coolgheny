@@ -28,6 +28,5 @@ It includes an Express server for serving up the files.
     - Stylesheets
     - Easily change the theme colors in /styles/_global.scss
 
-## Placeholder credit:
-https://unsplash.com/photos/pyia0ropCow  
+## Placeholder credit: 
 https://unsplash.com/photos/wizj0ppghD0  
