@@ -1,5 +1,4 @@
 # Coolgheny
-## Purpose:
 This is a React single-page template, with responsive design. 
 It includes an Express server for serving up the files. 
 
